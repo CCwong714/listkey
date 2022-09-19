@@ -6,9 +6,9 @@ import SMulMap from "./component/SMulMap";
 function App() {
   return (
     <>
-      {/* <SMulMap /> */}
+      <SMulMap />
       {/* <HMulMap /> */}
-      <CMulMap />
+      {/* <CMulMap /> */}
     </>
   );
 }

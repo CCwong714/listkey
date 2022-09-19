@@ -11,13 +11,13 @@ function CmulMap() {
         name: "Sam",
         details: [
           {
-            info: "https://bryan-test-2022.s3-ap-southeast-1.amazonaws.com/prd-img/9/main-img-9.jpg",
+            0: "https://bryan-test-2022.s3-ap-southeast-1.amazonaws.com/prd-img/9/main-img-9.jpg",
           },
           {
-            info: "https://bryan-test-2022.s3-ap-southeast-1.amazonaws.com/prd-img/9/sub-img-9-1.jpg",
+            1: "https://bryan-test-2022.s3-ap-southeast-1.amazonaws.com/prd-img/9/sub-img-9-1.jpg",
           },
           {
-            info: "https://bryan-test-2022.s3-ap-southeast-1.amazonaws.com/prd-img/9/sub-img-9-2.jpg",
+            2: "https://bryan-test-2022.s3-ap-southeast-1.amazonaws.com/prd-img/9/sub-img-9-2.jpg",
           },
         ],
       },
@@ -66,7 +66,9 @@ function CmulMap() {
 
       {users.data.map((item) => (
         <Box>
-          <Box>{item.name}</Box>
+          <Text fontWeight='bold' margin={5}>
+            {item.name}
+          </Text>
           <Carousel>
             {item.details.map((sub) => (
               <Image src={Object.values(sub)} w='100px' h='400px' />
